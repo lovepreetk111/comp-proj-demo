@@ -1,0 +1,11 @@
+<ng-container *ngIf="content">
+    <div>
+        <div>
+            <img [src]="content.image.url" [alt]="content.image.alt">
+        </div>
+        <div>
+            <p>{{content.text}}</p>
+        </div>
+    </div>
+</ng-container>
+

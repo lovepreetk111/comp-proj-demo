@@ -1,0 +1,17 @@
+
+
+<!-- <h1>{{pages[currentPageIndex].pageName}}</h1>
+<div *ngFor="let comp of pages[currentPageIndex].component">
+  <app-picture [image]="comp.metadata" *ngIf="comp.compID === 1"></app-picture>
+  <app-picture-with-text [content]="comp.metadata" *ngIf="comp.compID === 2"></app-picture-with-text>
+  <app-text [text]="comp.metadata.text" *ngIf="comp.compID === 3"></app-text>
+</div> -->
+
+<ng-container *ngIf="page">
+    <h1>{{page.pageName}}</h1>
+    <div *ngFor="let comp of page.component">
+      <app-picture [image]="comp.metadata" *ngIf="comp.compID === 1"></app-picture>
+      <app-picture-with-text [content]="comp.metadata" *ngIf="comp.compID === 2"></app-picture-with-text>
+      <app-text [text]="comp.metadata.text" *ngIf="comp.compID === 3"></app-text>
+    </div> 
+</ng-container>
